@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anouar News - أنوار الإخبارية</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="top-bar">
+            <div class="container top-bar-inner">
+                <span id="current-date"></span>
+                <div class="social-links">
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="container brand-area">
+            <a href="#" class="logo" onclick="app.navigate('home')">
+                <span class="logo-text">ANOUAR NEWS</span>
+                <span class="logo-ar">أنوار الإخبارية</span>
+            </a>
+            <div class="ad-space">
+                مساحة إعلانية (728x90)
+            </div>
+        </div>
+        <nav class="main-nav">
+            <div class="container nav-inner">
+                <button class="mobile-toggle" onclick="app.toggleMenu()" aria-label="القائمة الرئيسية">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="#" onclick="app.navigate('home')" class="nav-item active" data-target="home">الرئيسية</a></li>
+                    <li><a href="#" onclick="app.navigate('category', 'سياسة')" class="nav-item" data-target="سياسة">سياسة</a></li>
+                    <li><a href="#" onclick="app.navigate('category', 'اقتصاد')" class="nav-item" data-target="اقتصاد">اقتصاد</a></li>
+                    <li><a href="#" onclick="app.navigate('category', 'تكنولوجيا')" class="nav-item" data-target="تكنولوجيا">تكنولوجيا</a></li>
+                    <li><a href="#" onclick="app.navigate('category', 'رياضة')" class="nav-item" data-target="رياضة">رياضة</a></li>
+                    <li><a href="#" onclick="app.navigate('category', 'مجتمع')" class="nav-item" data-target="مجتمع">مجتمع</a></li>
+                </ul>
+                <div class="search-btn">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main id="app-content" class="container main-content">
+        <!-- Content will be injected here via JavaScript -->
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-grid">
+            <div class="footer-about">
+                <h3 class="footer-title">أنوار الإخبارية</h3>
+                <p>موقع إخباري رائد يقدم تغطية شاملة وموضوعية للأحداث السياسية والاقتصادية والرياضية والتكنولوجية على مدار الساعة، بمصداقية واحترافية عالية تليق بتطلعات القارئ العربي.</p>
+            </div>
+            <div class="footer-links">
+                <h3 class="footer-title">عن الموقع</h3>
+                <ul>
+                    <li><a href="#">من نحن</a></li>
+                    <li><a href="#">فريق التحرير</a></li>
+                    <li><a href="#">اتصل بنا</a></li>
+                    <li><a href="#">أعلن معنا</a></li>
+                </ul>
+            </div>
+             <div class="footer-links">
+                <h3 class="footer-title">سياساتنا</h3>
+                <ul>
+                    <li><a href="#">شروط الاستخدام</a></li>
+                    <li><a href="#">سياسة الخصوصية</a></li>
+                    <li><a href="#">حقوق النشر</a></li>
+                    <li><a href="#">سياسة ملفات الارتباط (الكوكيز)</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <p>&copy; 2026 Anouar News - أنوار الإخبارية. جميع الحقوق محفوظة.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
